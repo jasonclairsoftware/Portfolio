@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Project } from '../models/project';
+import { Project } from '../_models/project';
 
 @Component({
   selector: 'app-project-card',
