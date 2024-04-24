@@ -1,1 +1,25 @@
-<p>resume works!</p>
+<div class="container text-center">
+  <button (click)="downloadFile()" class="btn btn-primary mb-5 shadow border">Download Resume</button>
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group heading="Work Experience">
+        <h3>Work EXP</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eaque voluptates assumenda eveniet, nihil
+          minus ducimus beatae culpa vel totam itaque nisi sapiente necessitatibus officia optio explicabo provident
+          laudantium harum!</p>
+      </accordion-group>
+      <accordion-group heading="Education">
+        <h3>Education</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat delectus maxime repudiandae beatae at!
+          Itaque voluptatem, voluptas voluptate harum quidem, cumque dicta sit nulla facilis quaerat ut! Voluptatum,
+          beatae deleniti!</p>
+      </accordion-group>
+      <accordion-group heading="Skills">
+        <h3>Skills</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptatem et, natus nemo provident corrupti
+          officiis a porro architecto atque, voluptate quos enim vero odit error tenetur doloribus animi consequatur.
+        </p>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>
