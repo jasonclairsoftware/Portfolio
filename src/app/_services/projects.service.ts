@@ -8,14 +8,14 @@ import { Tag } from '../_models/tag';
 export class ProjectsService {
 
   projects: Project[] = [
-    {id: 0, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg", "../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
-    {id: 1, name: "Sample Fluid Simulation", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Fluid Simulation in Java", description: "description", tags: [Tag.JAVA]},
-    {id: 2, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
-    {id: 3, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
-    {id: 4, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
-    {id: 5, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]}
+    { id: 0, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg", "../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT] },
+    { id: 1, name: "Sample Fluid Simulation", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Fluid Simulation in Java", description: "description", tags: [Tag.JAVA] },
+    { id: 2, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT] },
+    { id: 3, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT] },
+    { id: 4, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT] },
+    { id: 5, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT] }
 
-   ];
+  ];
 
   constructor() { }
 
@@ -23,13 +23,33 @@ export class ProjectsService {
     return this.projects;
   }
 
-  getProjectById(id: number) : Project {
-    let project  = this.projects.find(project => project.id === id);
+  getProjectById(id: number): Project {
+    let project = this.projects.find(project => project.id === id);
 
-    if(project === undefined) {
+    if (project === undefined) {
       throw new TypeError("There is no project with id of: " + id);
     }
 
     return project;
   }
+
+  getProjectsByFilter(filterTags: Tag[]) {
+    let filteredprojects: Project[] = [];
+
+
+    this.projects.forEach(function (project) {
+      let foundall: boolean = true;
+
+      filterTags.forEach(function(filtertag) {
+        if(project.tags.includes(filtertag) == false){
+          foundall = false;
+        }
+      });
+      if(foundall) {
+        filteredprojects.push(project);
+      }
+    });
+    return filteredprojects;
+  }
+
 }
