@@ -8,12 +8,12 @@ import { Tag } from '../_models/tag';
 export class ProjectsService {
 
   projects: Project[] = [
-    {id: 0, name: "Sample Angular Project", imagelinks: [], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
-    {id: 1, name: "Sample Fluid Simulation", imagelinks: [], projectlink: "https://github.com/jasonclairsoftware", summary: "Fluid Simulation in Java", description: "description", tags: [Tag.JAVA]},
-    {id: 2, name: "Sample Angular Project", imagelinks: [], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
-    {id: 3, name: "Sample Angular Project", imagelinks: [], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
-    {id: 4, name: "Sample Angular Project", imagelinks: [], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
-    {id: 5, name: "Sample Angular Project", imagelinks: [], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]}
+    {id: 0, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
+    {id: 1, name: "Sample Fluid Simulation", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Fluid Simulation in Java", description: "description", tags: [Tag.JAVA]},
+    {id: 2, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
+    {id: 3, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
+    {id: 4, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]},
+    {id: 5, name: "Sample Angular Project", imagelinks: ["../../assets/me.jpg"], projectlink: "https://github.com/jasonclairsoftware", summary: "Simple angular project", description: "description", tags: [Tag.ANGULAR, Tag.TYPESCRIPT]}
 
    ];
 
