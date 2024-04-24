@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { Project } from '../_models/project';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-project-modal',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule, CommonModule],
   templateUrl: './project-modal.component.html',
   styleUrl: './project-modal.component.scss'
 })
