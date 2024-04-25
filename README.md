@@ -9,6 +9,7 @@ able to change the background of the body element. Continuing to research.
 
 ## TODO:: List
 
+I wish to move the components to pages and components folders
 I wish to move the Featured projects to the projects componemt.
 I wish to add canvas animations to the portrait on the home page
 I wish to change the overall font of the project

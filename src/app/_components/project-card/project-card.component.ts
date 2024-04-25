@@ -1,6 +1,6 @@
 import { Component, Input, NgModule, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Project } from '../_models/project';
+import { Project } from '../../_models/project';
 import { BsModalRef, BsModalService, ModalModule, ModalOptions } from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from '../project-modal/project-modal.component';
 
