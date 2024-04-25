@@ -1,27 +1,16 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+This project was inspired from https://www.youtube.com/@softwareengineeringskills9082
 
-## Development server
+## Current Issues
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Attempting to change styles to a darker color sateration. At the current time I'm not 
+able to change the background of the body element. Continuing to research.
 
-## Code scaffolding
+## TODO:: List
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+I wish to move the Featured projects to the projects componemt.
+I wish to add canvas animations to the portrait on the home page
+I wish to change the overall font of the project
+I wish to add a e-mail contact me service
+I wish to change the browser tab logo
